@@ -1,5 +1,6 @@
 package com.my.test;
 
+import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -74,7 +75,9 @@ public class FindGroup {
 				mat.reset(args[i]);
 			}
 			System.out.println(mat.replaceAll("บวบว"));
+			System.out.println("  ="+ Arrays.toString(args[i].split(" ")) );
+			
 		}
-		
+		 
 	}
 }
